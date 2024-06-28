@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:id="@+id/list_drink"
+    android:layout_marginTop="40dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/listImage"
+            android:src="@drawable/ice_chocolate"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/CardView.Dark"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/listName"
+            android:text="Others Drink"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/listImage"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/listTime"
+            android:text="See 5+"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/listName"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="100dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/listImage1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/f"
+            app:shapeAppearanceOverlay="@style/CardView.Dark" />
+
+        <TextView
+            android:id="@+id/listName1"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/listImage1"
+            android:text="Ice Latte"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/listTime1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/listName1"
+            android:text="See 10+"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/listImage3"
+            android:src="@drawable/milk_tea"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/CardView.Dark"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/listName3"
+            android:text="Milk Tea"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/listImage3"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/listTime3"
+            android:text="See 10+"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/listName3"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="100dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/listImage4"
+            android:src="@drawable/g"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/CardView.Dark"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/listName4"
+            android:text="Old Coffe"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/listImage4"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/listTime4"
+            android:text="See 5+"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/listName4"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="100dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/listImage44"
+            android:src="@drawable/americano"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/CardView.Dark"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/listName44"
+            android:text="Coffee"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/listImage44"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/listTime44"
+            android:text="See 10+"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/listName44"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="100dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/listImage447"
+            android:src="@drawable/h"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/CardView.Dark"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/listName447"
+            android:text="New Coffe"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/listImage447"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/listTime447"
+            android:text="See 15+"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/listName447"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="100dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/listImage448"
+            android:src="@drawable/e"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            app:shapeAppearanceOverlay="@style/CardView.Dark"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/listName448"
+            android:text="hot coffe"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/listImage448"/>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/listTime448"
+            android:text="See 5+"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/listName448"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="100dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="790dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.cardview.widget.CardView>
+

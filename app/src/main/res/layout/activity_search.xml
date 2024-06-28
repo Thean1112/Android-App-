@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_search"
+    android:background="#C0C0C0"
+    tools:context=".SearchActivity">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"/>
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_picture"
+        android:layout_toLeftOf="@id/camera_icon"
+        android:layout_toRightOf="@id/profile_picture"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@id/camera_icon"
+        android:hint="  ស្វែងរក"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:padding="10dp"
+        android:background="@drawable/cr18bfff4f4f4"
+        android:textColor="@android:color/white"/>
+
+
+    <!-- Camera Icon -->
+    <ImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"/>
+
+    <!-- Explore your genres TextView -->
+    <TextView
+        android:id="@+id/explore_genres_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="ស្វែងរក អ្វីដែរអ្នកចង់បាន"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Horizontal ScrollView for Genres -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/explore_genres_text"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+
+    <!-- Browse All TextView -->
+    <TextView
+        android:id="@+id/browse_all_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/explore_genres_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Browse all"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="16sp" />
+
+    <!-- GridLayout for Browse All Options -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/browse_all_text"
+        android:columnCount="2"
+        android:padding="16dp">
+
+        <!-- Browse Items -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/americano"
+            android:contentDescription="Music" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/potato_chips"
+            android:contentDescription="Podcasts" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/ice_greentea"
+            android:contentDescription="Live Events" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/corn_dogs"
+            android:contentDescription="Live  New Events" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/mocha"
+            android:contentDescription="Live Events3" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:src="@drawable/fried_chicken"
+            android:contentDescription="Made For You" />
+    </GridLayout>
+
+    <!-- Now Playing Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/now_playing_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In The City"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/now_playing_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La Cima Cartel and YCN Rakhie"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Now Playing Play/Pause Button -->
+        <ImageButton
+            android:id="@+id/now_playing_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_add_24"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+</RelativeLayout>

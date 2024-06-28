@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GreenTea_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailName"
+                android:layout_marginTop="14dp"
+                android:text="Coffee"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/cardImage"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/detailImage"
+                    android:layout_width="380dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/caramelmacchiato" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hot coffee"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailTime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1$"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/menuimg1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/menuimg3"
+                android:layout_marginTop="14dp"
+                android:text="Fast Foods"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/menuimg2"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/menu2"
+                    android:layout_width="380dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sushi" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sushi"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailTime2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$1.00"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailDesc"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailName1"
+                android:layout_marginTop="14dp"
+                android:text="Others Drink"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/cardImage1"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/detailImage1"
+                    android:layout_width="380dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/milk_tea" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Milk Tea"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailTime1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$2.00"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailDesc1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailName11"
+                android:layout_marginTop="14dp"
+                android:text="Fast Foods"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/cardImage11"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/detailImage11"
+                    android:layout_width="380dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fried_chicken" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fried Chickens"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailTime11"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$2.90"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailDesc11"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailName111"
+                android:layout_marginTop="14dp"
+                android:text="Coffee"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/cardImage111"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/detailImage111"
+                    android:layout_width="380dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mocha" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mocha"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailTime111"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$3.00"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailDesc111"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailName1111"
+                android:layout_marginTop="14dp"
+                android:text="Others Drink"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:id="@+id/cardImage1111"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/detailImage1111"
+                    android:layout_width="380dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ice_chocolate" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ice Chocolate"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailTime1111"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1$"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp"
+                android:id="@+id/detailDesc1111"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>
